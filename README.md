@@ -2,6 +2,8 @@
 
 # gluten-free-starter
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/86756b68-22c6-4e5a-8692-894b6e4ed2ae/deploy-status)](https://app.netlify.com/sites/reece-birthday-2020/deploys)
+
 Get up and running right away with a free static site hosted to Netlify
 
 ## Project setup
