@@ -38,3 +38,9 @@
   pretty_urls = true
 [build.processing.images]
   compress = true
+
+# Handles vue router history mode
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
