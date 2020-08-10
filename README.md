@@ -1,10 +1,13 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73e20f7e-2cb6-4daa-a100-84841039ba63/deploy-status)](https://app.netlify.com/sites/page-flipper/deploys)
+
+# Page Flipper
+
+Mobile friendly scroller
+
+## Build using
+
+Got up and running right away with a free static site hosted to Netlify
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Tocseoj/gluten-free-starter)
-
-# gluten-free-starter
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3afbd52b-fc0b-48f6-91f0-5804a4043ea2/deploy-status)](https://app.netlify.com/sites/gluten-free-starter/deploys)
-
-Get up and running right away with a free static site hosted to Netlify
 
 ## Project setup
 
