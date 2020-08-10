@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="@/assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <img alt="app logo" :src="custom_logo" />
+    <HelloWorld :msg="hello_message" />
   </div>
 </template>
 
@@ -9,5 +9,13 @@
 export default {
   name: 'Home',
   path: '/',
+  data() {
+    return {
+      hello_message:
+        'Welcome to ' + (process.env.VUE_APP_TITLE || 'Your Vue.js App'),
+      custom_logo:
+        process.env.VUE_APP_CUSTOM_LOGO || require('@/assets/logo.png'),
+    }
+  },
 }
 </script>

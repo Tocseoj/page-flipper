@@ -21,9 +21,8 @@
   GLUTEN_FREE = "very"
 
 [template.environment]
-  SITE_NAME = "change me for your site name"
-  VUE_APP_TITLE = "change me for your site name"
-  CUSTOM_LOGO = "set the url to your custom logo here"
+  VUE_APP_TITLE = "Your Site Name"
+  VUE_APP_CUSTOM_LOGO = "set the url to your custom logo here"
   SECRET_CODE = "no one should ever know of this"
 
 # If skip_processing = true, all other settings are ignored
