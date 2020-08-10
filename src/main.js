@@ -6,6 +6,12 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+import VueYouTubeEmbed from 'vue-youtube-embed'
+Vue.use(VueYouTubeEmbed)
+
+import vuescroll from 'vue-scroll'
+Vue.use(vuescroll)
+
 // Automatically register components globally
 const files = require.context('@/components/', true, /\.vue$/i)
 files.keys().map((key) =>
