@@ -17,9 +17,5 @@ export default {
         process.env.VUE_APP_CUSTOM_LOGO || require('@/assets/logo.png'),
     }
   },
-  created() {
-    console.log('Logging environment')
-    console.log(process.env)
-  },
 }
 </script>
