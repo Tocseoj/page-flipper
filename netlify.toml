@@ -17,13 +17,13 @@
   # Directory with the serverless Lambda functions to deploy to AWS.
   functions = "functions/"
 
-[build.environment]
-  GLUTEN_FREE = "very"
-
 [template.environment]
   VUE_APP_TITLE = "Your Site Name"
   VUE_APP_CUSTOM_LOGO = "set the url to your custom logo here"
   SECRET_CODE = "no one should ever know of this"
+
+[build.environment]
+  GLUTEN_FREE = "very"
 
 # If skip_processing = true, all other settings are ignored
 [build.processing]
