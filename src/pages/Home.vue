@@ -13,9 +13,19 @@
             :video-id="ytId(slide.url)"
             :player-vars="ytVars(slide.url, 1)"
             :mute="index !== currentIndex"
-            :player-width="$refs.home ? $refs.home.clientWidth : 350"
+            :player-width="
+              $refs.home
+                ? $refs.home.clientWidth > 420
+                  ? 420
+                  : $refs.home.clientWidth
+                : 420
+            "
             :player-height="
-              $refs.home ? $refs.home.clientWidth * 0.5625 : 350 * 0.5625
+              $refs.home
+                ? ($refs.home.clientWidth > 420
+                    ? 420
+                    : $refs.home.clientWidth) * 0.5625
+                : 420 * 0.5625
             "
           />
         </div>
@@ -41,14 +51,7 @@ export default {
             b: 251,
           },
         },
-        {
-          url: 'https://www.youtube.com/watch?v=4VGyoYVNZkk',
-          color: {
-            r: 238,
-            g: 92,
-            b: 120,
-          },
-        },
+
         {
           url: 'https://www.youtube.com/watch?v=095l0MJF7-w',
           color: {
@@ -63,6 +66,14 @@ export default {
             r: 10,
             g: 84,
             b: 134,
+          },
+        },
+        {
+          url: 'https://www.youtube.com/watch?v=4VGyoYVNZkk',
+          color: {
+            r: 238,
+            g: 92,
+            b: 120,
           },
         },
       ],
